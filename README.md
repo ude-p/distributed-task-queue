@@ -15,7 +15,7 @@ The Distributed Task Queue System is designed to handle asynchronous task proces
 - Backend Language: Golang
 - Message Broker: Redis
 - Database: PostgreSQL (for task persistence)
-- API Framework: Gin or Echo
+- API Framework: Gin
 - Deployment: Docker
 
 ## System Architecture

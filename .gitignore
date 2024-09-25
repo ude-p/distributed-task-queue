@@ -1,0 +1,23 @@
+# Go binaries
+/bin/
+/build/
+/cmd/debug/
+*.exe
+*.out
+*.test
+
+# Config
+*.env
+
+# Dependency directories
+/vendor/
+
+# IDE configurations
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerfile

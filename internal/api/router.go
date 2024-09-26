@@ -1,11 +1,20 @@
 package api
 
 import (
-	"github.com/gin-gonic/gin"
+	"net/http"
+
+	"github.com/go-chi/chi/v5"
 )
 
-func RegisterRouters(r *gin.Engine) {
+func RegisterRouters() http.Handler {
+
+	r := chi.NewRouter()
+
 	handler := &TaskHandler{}
 
-	r.GET("/ping", handler.HandleTask)
+	r.Post("/submit-task", handler.SubmitTask)
+	r.Get("/task-update", handler.GetTaskUpdate)
+
+	return r
+
 }

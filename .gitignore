@@ -8,6 +8,7 @@
 
 # Config
 *.env
+*proj-struct
 
 # Dependency directories
 /vendor/

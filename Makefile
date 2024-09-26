@@ -1,7 +1,7 @@
 # Variables
 
 GO_CMD=go
-API_PATH=cmd/api-server/main.go
+API_PATH=cmd/api/main.go
 WORKER_PATH=cmd/worker/main.go
 DEBUG_PATH=cmd/debug/debug.go
 

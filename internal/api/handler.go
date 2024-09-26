@@ -1,11 +1,15 @@
 package api
 
-import "github.com/gin-gonic/gin"
+import (
+	"net/http"
+)
 
 type TaskHandler struct{}
 
-func (t *TaskHandler) HandleTask(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"message": "pong",
-	})
+func (t *TaskHandler) SubmitTask(w http.ResponseWriter, r *http.Request) {
+
+}
+
+func (t *TaskHandler) GetTaskUpdate(w http.ResponseWriter, r *http.Request) {
+
 }

@@ -7,7 +7,8 @@
 *.test
 
 # Config
-*.env
+/pkg/configs/config.yaml
+/pkg/configs/redis.yaml
 *proj-struct
 
 # Dependency directories

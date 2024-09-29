@@ -10,10 +10,8 @@ func RegisterRouters() http.Handler {
 
 	r := chi.NewRouter()
 
-	handler := &TaskHandler{}
-
-	r.Post("/submit-task", handler.SubmitTask)
-	r.Get("/task-update", handler.GetTaskUpdate)
+	r.Post("/submit-task", SubmitTask)
+	r.Get("/task-update", GetTaskUpdate)
 
 	return r
 
